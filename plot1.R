@@ -21,7 +21,7 @@ newdat$Whole_Time <- strptime(newdat$Whole_Time, format = "%d/%m/%Y %H:%M:%S")
 
 png(file = "plot1.png")  ## Create file for histogram to be saved in
 
-hist(data[,3], col = "red", main = "Global Active Power", 
+hist(newdat[,3], col = "red", main = "Global Active Power", 
      xlab = "Global Active Power (kilowatts)", ylab = "Frequency")
 
 dev.off()  ## Stop R from sending plots to plot1.png file
